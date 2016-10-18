@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML内联块状元素</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        .wrap{
+            margin: 10px 0;
+            border: 1px dashed red;
+        }
+
+        .inline-block{
+            margin: 20px 0;
+            line-height: 30px;
+            background-color: red;
+            color: #fff;
+        }
+
+        .set-inline-block{ display: inline-block; }
+
+        .with200{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    内联块状元素显示效果：
+    <div class="wrap">
+        <div class="inline-block">这是一个设置了 display: inline-block; 的 div</div>
+        <span class="inline-block set-inline-block">这是一个设置了 display: inline-block; 的 span</span>
+        <strong class="inline-block set-inline-block with200">这是一个设置了 display: inline-block; 的 strong</strong>
+    </div>
+    （备注：红色虚线为父级原生边框）
+</body>
+</html>

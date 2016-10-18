@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML内联元素</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        .wrap{
+            margin: 10px 0;
+            border: 1px dashed red;
+        }
+
+        .inline{
+            margin: 10px 0; /*上下外边距不起作用*/
+            line-height: 30px; /*行高不做用于元素内*/
+            width: 200px; /*宽度不会起作用*/
+            background-color: red;
+            color: #fff;
+        }
+
+        .set-inline{ display: inline; }
+    </style>
+</head>
+<body>
+
+    内联元素显示效果：
+    <div class="wrap">
+        <span class="inline">这是一个 span</span>
+        <strong class="inline">这是一个 strong</strong>
+        <div class="inline set-inline">这是一个设置了 display: inline; 的 div</div>
+    </div>
+    （备注：红色虚线为父级原生边框）
+</body>
+</html>
