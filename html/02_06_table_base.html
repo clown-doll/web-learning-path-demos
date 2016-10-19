@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简单的表格</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        table{ margin: 10px 0 30px; }
+    </style>
+</head>
+<body>
+
+    没指定border的表格：
+    <table>
+        <tr>
+            <td>cat</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>tom</td>
+            <td>12</td>
+        </tr>
+    </table>
+    <br>
+    指定了border的表格：
+    <table border="1">
+        <tr>
+            <td>cat</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>tom</td>
+            <td>12</td>
+        </tr>
+    </table>
+    <br>
+    去除单元格间的间隙：
+    <table border="1" cellspacing="0">
+        <tr>
+            <td>cat</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>tom</td>
+            <td>12</td>
+        </tr>
+    </table>
+    <br>
+    单一边框：
+    <table border="1" cellspacing="0" style="border-collapse: collapse;">
+        <tr>
+            <td>cat</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>tom</td>
+            <td>12</td>
+        </tr>
+    </table>
+    <br>
+    长内容时表格的展现：
+    <table border="1" cellspacing="0" style="border-collapse: collapse;">
+        <tr>
+            <td>cat</td>
+            <td>This article is about the cat.</td>
+        </tr>
+        <tr>
+            <td>dog</td>
+            <td>This article is about the domestic dog.</td>
+        </tr>
+    </table>
+
+</body>
+</html>

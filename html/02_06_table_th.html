@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表头设置</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        table{ margin: 10px 0 30px; }
+    </style>
+</head>
+<body>
+
+    设置表头：
+    <table border="1">
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+        </tr>
+        <tr>
+            <td>Cat</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Tom</td>
+            <td>12</td>
+        </tr>
+    </table>
+
+    <br>
+    在一行中混合使用 th 和 td：
+    <table border="1">
+        <tr>
+            <th>姓名</th>
+            <th>年级</th>
+            <th>班级</th>
+        </tr>
+        <tr>
+            <th>Cat</th>
+            <td>高一</td>
+            <td>1班</td>
+        </tr>
+        <tr>
+            <th>Tom</th>
+            <td>初一</td>
+            <td>2班</td>
+        </tr>
+    </table>
+
+    <br>
+    用 thead 和 tbody 区分表格结构：
+    <table border="1">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Cat</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Tom</td>
+                <td>12</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列的分组</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        table{ margin: 10px 0 30px; }
+    </style>
+</head>
+<body>
+
+    <table border="1" cellspacing="0" style="border-collapse: collapse;">
+        <caption>学生信息表</caption>
+        <colgroup>
+            <col span="2" style="background-color: red;">
+            <col span="1" style="background-color: yellow;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>班级</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cat</td>
+                <td>20</td>
+                <td rowspan="2">初一（1）班</td>
+            </tr>
+            <tr>
+                <td>Tom</td>
+                <td>12</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
