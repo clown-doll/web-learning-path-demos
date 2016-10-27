@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优先级</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        p { color: #999; } /* 权值：1 */
+        p strong { color: #333; } /* 权值：1 + 1 = 2 */
+        #stress{ color: red; } /* 权值：100 */
+        #stress i.italic{ color: pink; } /* 权值：100 + 1 + 10 = 111 */
+    </style>
+</head>
+<body>
+    <p>浏览器根据<strong>优先级</strong>解析 <strong id="stress"><i class="italic">CSS</i> 样式属性</strong></p>
+</body>
+</html>
