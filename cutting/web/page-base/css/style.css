@@ -1,0 +1,78 @@
+/*
+* @Author: Administrator
+* @Date:   2016-11-16 10:22:40
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-11-16 20:21:09
+*/
+
+/* CSS Reset */
+body, div, span, object, iframe,input, h1, h2, h3, h4, h5, h6, p, pre, a, acronym, address, code, del, em, font, img, ins, strong, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td{ padding: 0; margin: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+ins{ text-decoration: none;}
+del{ text-decoration: line-through;}
+input,select{ vertical-align:middle;}
+input,textarea,select{font:12px/1.5 "Microsoft YaHei", Arial, sans-serif;}
+fieldset, img { border: 0; }
+address,code,th,em{font-style:normal;}
+ol, ul { list-style: none; }
+h1, h2, h3, h4, h5, h6 {font-size: 100%; font-weight: normal;}
+
+/* clear float */
+.clearfix:after{ content:""; height:0; visibility:hidden; display:block; clear:both;}
+.clearfix{ zoom:1;}
+.clear { clear:both;}
+
+
+/*------------ public ------------*/
+body{ background-color: #fff; font: 14px "SimSun"; color: #333; min-width: 1280px;}
+.wrapper{ margin: 0 auto; width: 960px; }
+/* link */
+a{ color:#333; text-decoration:none;}
+a:hover{ color:#cd5d00;}
+
+/*------------ header ------------*/
+.header{ height: 88px; background: url(../image/bg-header.png) repeat-x 0 0;}
+.logo{ float: left; width: 304px; background: url(../image/logo.png) no-repeat left center;}
+.logo a{ display: block; padding: 14px 0; height: 57px; padding-left: 59px;}
+.logo a strong{ display: block; font-size: 30px; font-family: "Microsoft YaHei"; font-weight: normal;}
+.nav{ float: right; margin-top: 8px; width: 600px;}
+.nav li{ display: inline-block; *display: inline; *zoom: 1; padding-left: 46px; font-family: "Microsoft YaHei"; font-size: 18px;}
+.nav li a{ position: relative; display: block; padding: 28px 0;}
+.nav li a:hover:after,
+.nav .active a:after{ content: ""; display: block; position: absolute; bottom: 0; left: 50%; margin-left: -10px; width: 0; height: 0; border-style:solid; border-width: 10px; border-color: transparent transparent #f28f26 transparent; }
+.nav .active a{ color: #cd5d00; }
+
+/*------------ flash ------------*/
+.banner{ height: 339px; background-color: #ffced4; text-align: center;}
+
+/*------------ container ------------*/
+.container{ margin-top: 27px; }
+/*sidebar*/
+.sidebar{ float: left; width: 268px; }
+.sidebar-title{ height: 60px; background: url(../image/bg-title.png) no-repeat 0 0; text-indent: -999em; overflow: hidden;}
+.sidebar-con{ background-color: #fbeeda; border-bottom: 1px solid #f3d2a1;}
+.sidebar-con li{ height: 48px; line-height: 48px; }
+.sidebar-con li a{ position: relative; display: block; height: 48px; padding-left: 24px; border-style:solid; border-width: 1px; border-color: #fbeeda #f3d2a1 #fbeeda #f3d2a1;}
+.sidebar-con .active a,
+.sidebar-con li a:hover{ background-color: #fff; border-color: #f3d2a1 #fff #f3d2a1 #fe5d00; border-left-width: 2px;}
+.sidebar-con .active a:after,
+.sidebar-con li a:hover:after{ content: ""; display: block; position: absolute; top: 20px; left: 0; width: 0; height: 0; border-style:solid; border-width: 4px; border-color: transparent transparent transparent #fe5d00; }
+
+/*main*/
+.main{ float: right; width: 661px; }
+.main-title{ padding: 0 0 8px 4px; background: url(../image/line.png) no-repeat bottom center; font-size: 24px; font-family: "Microsoft YaHei"; line-height: 1;}
+.main-list{ margin: 24px -30px 0 0; overflow: hidden; }
+.main-list li{ float: left; margin: 0 30px 34px 0; width: 200px;}
+.main-list .list-con{ display: block; margin-bottom: 20px;}
+.main-list .list-con img{ margin-bottom: 12px; display: block; width: 200px; height: 133px; }
+.main-list .times{ display: block; padding-left: 24px; background: url(../image/icon-play.png) no-repeat 0 0; height: 17px; line-height: 17px; font-size: 12px; color: #576408; }
+.main-page{ padding-top: 42px; text-align: center; }
+.main-page a{ border: 1px solid #f3d2a1; background-color: #f9f9f9;}
+.main-page a:hover,
+.main-page span{ border: 1px solid #f1a000; background-color: #f1a000;}
+.main-page a,
+.main-page span{ display: inline-block; *display: inline; *zoom: 1; margin: 0 4px; padding: 0 10px; height: 22px; line-height: 22px; font-size: 12px; color: #434242;}
+
+/*------------ footer ------------*/
+.footer{ padding: 10px 0; margin-top: 24px; background-color: #fbeeda; border-top: 1px solid #f3d3a4; border-bottom: 1px solid #f3d3a4; text-align: center; font-size: 12px; line-height: 42px;}
+.footer span{ padding: 0 15px; }
