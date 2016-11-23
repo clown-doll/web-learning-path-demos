@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型-高度</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        html,body{
+            height:100%;
+            }
+        p, span {
+            border:1px dashed red;
+            }
+        .box-1 {
+            height:50px;
+            }
+        .box-2 {
+           height:10%;
+            }
+        .box-3 {
+            height:auto;
+            }
+        .box-p{
+            background:yellow;
+            margin-top: 30px;
+            }
+        .box-c {
+            height:inherit;
+            background:red;
+            color:#fff;
+            }
+
+        .hidden{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <p class="box-1">我是块级元素 - 高度生效</p>
+    <span class="box-1">我是行内元素 - 高度无效</span>
+    <p class="box-1">使用像素来定义元素高度 - 50px</p>
+    <p class="box-2">定义基于包含块（父元素）宽度的百分比宽度 - 10%</p>
+    <p class="box-3"> 默认值。浏览器可计算出实际的宽度。 - auto</p>
+    <div class="box-p box-1">
+        父元素(默认值为50px)
+        <div class="box-c">
+            子元素(inherit应该从父元素继承 width 属性的值：50px)
+        </div>
+    </div>
+
+    <div class="box-p box-1 hidden">
+        父元素(默认值为50px) - 高度超出部分被隐藏
+        <div class="box-c">
+            子元素(inherit应该从父元素继承 width 属性的值：50px)
+        </div>
+    </div>
+</body>
+</html>

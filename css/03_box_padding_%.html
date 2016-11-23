@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型 - 内边距 - 百分比</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        div{
+            border:1px dashed red;
+            margin-bottom:40px;
+            }
+        div p{
+            margin:0;
+            padding:10%;
+            }
+        .box-4{
+            width:200px;
+            }
+        .box-5{
+            width:100%;
+            }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box-4">
+        <p>
+              根据父元素（200px）宽度，计算10%宽度的内边距 - 20px
+        </p>
+    </div>
+    <div class="box-5">
+        <p>
+            根据父元素100%宽度，计算10%宽度的内边距,上下内边距与左右内边距一致；即上下内边距的百分数会相对于父元素宽度设置，而不是相对于高度。
+        </p>
+    </div>
+</body>
+
+</html>

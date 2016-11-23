@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框样式 - border-style</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        p {
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+
+        .p-2 {
+            border-top-style: dotted;
+            border-right-style: solid;
+            border-bottom-style: dotted;
+            border-left-style: solid;
+        }
+        .p-3 {
+            border-style: dotted solid;
+        }
+        .p-4 {
+            border-style: dotted solid double dashed;
+        }
+        .p-5{
+            border-style: dotted solid double;
+        }
+        .p-6{
+            border-style: dotted solid;
+        }
+        .p-7{
+            border-style: dotted;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>边框样式</h1>
+    <p class="p-2">
+        border-top-style: dotted; <br>
+        border-right-style: solid; <br>
+        border-bottom-style: dotted; <br>
+        border-left-style: solid;
+    </p>
+    <p class="p-3">border-style: dotted solid;</p>
+    <p class="p-4">
+        - 上边框是 dotted<br/>
+        - 右边框是 solid<br/>
+        - 底边框是 double<br/>
+        - 左边框是 dashed <br/> <br/>
+        border-style: dotted solid double dashed;
+    </p>
+    <p class="p-5">
+        - 上边框是 dotted<br/>
+        - 左、右边框是 solid<br/>
+        - 底边框是 double <br/> <br/>
+        border-style: dotted solid double;
+    </p>
+    <p class="p-6">
+        - 上、底边框是 dotted<br/>
+        - 右、左边框是 solid<br/><br/>
+        border-style: dotted solid;
+    </p>
+    <p class="p-7">
+        - 四面边框是 dotted<br/><br/>
+        border-style: dotted;
+    </p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型-宽度</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        p, span {
+            border:1px dashed red;
+            }
+        .box-1 {
+            width:600px;
+            }
+        .box-2 {
+            width:50%;
+            }
+        .box-3 {
+            width:auto;
+            }
+        .box-p{
+            background:yellow;
+            }
+        .box-c {
+            width:inherit;
+            background:red;
+            color:#fff;
+            }
+    </style>
+</head>
+<body>
+    <p class="box-1">我是块级元素 - 宽度生效</p>
+    <span class="box-1">我是行内元素 - 宽度无效</span>
+    <p class="box-1">使用像素来定义元素宽度 - 600px</p>
+    <p class="box-2">定义基于包含块（父元素）宽度的百分比宽度 - 50%</p>
+    <p class="box-3"> 默认值。浏览器可计算出实际的宽度。 - auto</p>
+    <div class="box-p box-1">
+        父元素(设置父元素的宽度为600px)
+        <div class="box-c">
+            子元素(inherit应该从父元素继承 width 属性的值：600px)
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型-外边距</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .section{
+            border:1px dashed red;
+            margin-bottom:20px;
+            width: 600px;
+            }
+        .box{
+            background:#f00;
+            color:#fff;
+            }
+        .box-1{
+            margin : 0.25in;
+            }
+        .box-2{
+            margin : 10px 0px 15px 5px;
+            }
+        .box-3{
+            margin:5%;
+            }
+
+    </style>
+</head>
+<body>
+     <div class="section">
+        <div class="box box-1">元素的各个边上设置了 1/4 英寸宽的空白</div>
+    </div>
+    <div class="section">
+        <div class="box">
+            元素不设置margin值，默认值为0
+        </div>
+    </div>
+    <div class="section">
+        <div class="box box-2">
+            元素的四个边分别定义了不同的外边距( 上：10px 右：0px 下：15px 左：5px)，所使用的长度单位是像素 (px)
+        </div>
+    </div>
+    <section class="section">
+        <div class="box box-3">
+            margin 设置一个百分比数值:5%(百分数是相对于父元素的 width 计算的。)
+        </div>
+    </section>
+
+
+</body>
+</html>
