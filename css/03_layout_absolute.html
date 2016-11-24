@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>布局模型 - 绝对定位</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* clear float */
+        .clearfix:after{ content:""; height:0; visibility:hidden; display:block; clear:both;}
+        .clearfix{ zoom:1;}
+        .clear { clear:both;}
+
+        .wrapper{
+            position: relative;
+            border: 1px dashed red;
+            width: 300px;
+        }
+        .fl{
+            float: left;
+        }
+        .div{
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+
+        .absolute{
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            background-color: red;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper clearfix">
+        <div class="div fl">
+            1
+        </div>
+        <div class="div fl">
+            2
+        </div>
+        <div class="div absolute">
+            3
+        </div>
+    </div>
+    <div class="div absolute">4</div>
+</body>
+</html>

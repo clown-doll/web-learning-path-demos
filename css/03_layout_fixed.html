@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>布局模型 - 固定定位</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .wrapper{
+            border: 1px dashed red;
+            width: 200px;
+            height: 800px;
+        }
+        .div{
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+        }
+        .fixed{
+            position: fixed;
+            top: 20px;
+            left: 30px;
+            background-color: yellow;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper clearfix">
+        <div class="div fixed"></div>
+    </div>
+</body>
+</html>
