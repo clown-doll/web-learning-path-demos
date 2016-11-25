@@ -1,0 +1,51 @@
+/*
+* @Author: Administrator
+* @Date:   2016-11-17 18:13:12
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-11-25 11:18:29
+*/
+
+/* reset */
+* { margin: 0; padding: 0; border: none; outline: none; vertical-align: baseline; box-sizing: border-box;}
+img { border: none; vertical-align: middle; }
+em,i { font-style: normal;}
+ol,ul { list-style: none;}
+h1,h2,h3,h4,h5,h6 { font-weight: normal;}
+table { border-collapse: collapse; border-spacing: 0; }
+input,textarea,select{ -webkit-appearance: none; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-color: transparent;}
+a,img{ -webkit-touch-callout: none;/* 禁止长按链接与图片弹出菜单 */}
+html,body{ -webkit-user-select: none;/* 禁止选中文本（如无文本选中需求，此为必选项） */user-select: none;}
+
+.clearfix:after { content: ""; height: 0; visibility: hidden; display: block; clear: both; }
+.clearfix { zoom: 1; }
+.clear { clear: both }
+
+
+/*---------- public ----------*/
+html { font: 6.25%/1.5 "Helvetica Neue", Helvetica, STHeiTi, sans-serif; background-color: #ececec; color: #131313; }
+
+/*---------- header ----------*/
+.header{ padding: 14px 24px; background-color: #fb664e; font-size: 24px; color: #fff;}
+.header img{ margin-right: 16px; width: 70px; height: 70px;  vertical-align: middle;}
+
+/*---------- order ----------*/
+.order{ padding-bottom: 70px; background: #fff url(../image/bg-con.png) repeat-x 0 bottom; }
+/* order header */
+.order-header{ position: relative; padding: 24px 38px; background-color: #f9f9f9; border-bottom: 1px solid #dcdcdc;}
+.order-header span{ padding-left: 44px; background: url(../image/icon.png) no-repeat; font-size: 28px; }
+.order-header .price{ position: absolute; top: 16px; right: 24px; font-size: 38px; color: #ff7c10;}
+/* order content */
+.order-con{ background-color: #fff; }
+.order-con strong{ display: block; padding: 14px 28px;  font-size: 24px;}
+.order-detail{ padding: 24px 28px; background-color: #f5f5f5;}
+.order-detail img{ display: block; float: left; margin-right: 14px; width: 100px; height: 100px; }
+.order-detail .order-info{ float: left; width: 316px; }
+.order-detail .order-info h3{ font-size: 24px; }
+.order-detail .order-info p{ font-size: 20px; color: #727272; line-height: 32px;}
+.order-detail .order-price{ float: right; text-align: right; font-size: 24px; }
+.order-detail .order-price span{ display: block; font-size: 20px; color: #727272; }
+.order-explain{ padding: 34px 28px 84px 28px; color: #727272;}
+.order-explain dt{ margin-bottom: 28px; font-size: 22px; }
+.order-explain dd{ font-size: 20px; line-height: 28px;}
+.order-explain dd.stress{ color: #ff7c10; }
+.btn-sent{ display: block; margin: 0 auto; width: 580px; height: 70px; background-color: #ff7c10; border-radius: 5px; line-height: 70px; font-size: 32px; color: #fff; text-decoration: none; text-align: center;}
